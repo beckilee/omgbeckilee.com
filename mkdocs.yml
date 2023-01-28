@@ -1,0 +1,30 @@
+site_name: Becki Lee's Portfolio
+site_url: https://omgbeckilee.com
+nav:
+    - Home: index.md
+    - About: about.md
+theme:
+  name: material
+  palette:
+    primary: blue-grey
+    accent: teal
+    scheme: slate
+  font:
+    code: Source Code Pro
+    text: Lato
+  icon:
+    logo: material/book-open-variant
+  features:
+    - navigation.footer
+extra:
+  social:
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:becki.lee@gmail.com
+    - icon: fontawesome/brands/github
+      link: https://github.com/beckilee
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/becki-lee-10181562/
+copyright: Copyright &copy; 2023 Becki Lee
+markdown_extensions:
+  - toc:
+      permalink: ⚓︎
