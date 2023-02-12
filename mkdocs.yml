@@ -24,6 +24,9 @@ extra:
       link: https://github.com/beckilee
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/becki-lee-10181562/
+  analytics:
+    provider: google
+    property: UA-75282754-1
 copyright: Copyright &copy; 2023 Becki Lee
 markdown_extensions:
   - toc:
