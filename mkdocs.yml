@@ -1,21 +1,24 @@
 site_name: Becki Lee's Portfolio
 site_url: https://omgbeckilee.com
 nav:
-    - Home: index.md
-    - About: about.md
+    - Writing samples: index.md
+    - About me: about.md
+    - Skills and tools: tools.md
 theme:
   name: material
   palette:
-    primary: blue-grey
-    accent: teal
+    primary: green
+    accent: blue
     scheme: slate
   font:
     code: Source Code Pro
     text: Lato
   icon:
-    logo: material/book-open-variant
+    logo: material/book-heart
+  favicon: images/favicon.svg
   features:
     - navigation.footer
+    - navigation.expand
 extra:
   social:
     - icon: fontawesome/solid/paper-plane
@@ -27,7 +30,13 @@ extra:
   analytics:
     provider: google
     property: G-5WSGN2D3GL
-copyright: Copyright &copy; 2023 Becki Lee
+copyright: Copyright &copy; 2024 Becki Lee
 markdown_extensions:
   - toc:
       permalink: ⚓︎
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+extra_css:
+  - stylesheets/extra.css

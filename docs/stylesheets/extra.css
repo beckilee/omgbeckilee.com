@@ -1,0 +1,24 @@
+.md-typeset table thead th {
+    /* background-color: #4cae4f; */
+    background-color: var(--md-typeset-table-color);
+    color: white;
+    padding: 10px;
+    font-size: 0.75rem;
+}
+
+.md-typeset table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.md-typeset table td,
+.md-typeset table th {
+    border-right: .05rem solid var(--md-typeset-table-color);
+    padding: 10px;
+    font-size: 0.75rem;
+}
+
+.md-typeset table th:last-child,
+.md-typeset table td:last-child {
+    border-right: none;
+}
