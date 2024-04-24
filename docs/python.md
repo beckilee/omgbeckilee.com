@@ -1,0 +1,9 @@
+# Python code samples
+
+I took an introductory Python class for my Information Systems degree, and I enjoy writing Python as a hobby. You can view my projects on GitHub:
+
+- :material-gamepad-variant: [Becki's Wordle Clone](https://github.com/beckilee/python-projects/tree/main/wordle){ target="_blank" rel="noopener noreferrer" }: My version of the famous [New York Times game](https://www.nytimes.com/games/wordle/index.html){ target="_blank" rel="noopener noreferrer" } (created by Josh Wardle) where players try to guess a 5-letter word.
+- :material-phone-log: [Becki's Totally Awesome Phonebook](https://github.com/beckilee/python-projects/tree/main/phonebook){ target="_blank" rel="noopener noreferrer" }: A simple phonebook application in your terminal, created for a school project. You can add, update, delete, search, and "favorite" entries.
+- :material-grid: [Tic-Tac-Toe](https://github.com/beckilee/python-projects/tree/main/tic-tac-toe){ target="_blank" rel="noopener noreferrer" }: A game for two (human) players, created for a school project. I included a feature that keeps track of how many games each player has won during the session.
+
+I've also written Python for work. For example, I expanded and enhanced a script a colleague wrote generating a Markdown table of Rego rules (as demonstrated on [Regula's website](https://regula.dev/rules.html){ target="_blank" rel="noopener noreferrer" }). You can see my contribution in a [pull request](https://github.com/fugue/regula/pull/283){ target="_blank" rel="noopener noreferrer" } or view the [full script](https://github.com/fugue/regula/blob/master/docs/scripts/rules_tables.py){ target="_blank" rel="noopener noreferrer" } in Regula's repository.

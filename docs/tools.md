@@ -1,4 +1,4 @@
-# Skills and tools
+# Technical skills
 
 ## :fontawesome-solid-pen-nib: Documentation tools
 
@@ -42,7 +42,8 @@
 
 ### Version control
 
-- Git/GitHub
+- Git
+- GitHub
 
 ### Programming languages
 
@@ -62,7 +63,7 @@
 - Travis CI
 - GitHub Actions
 
-## :octicons-video-16: Multimedia
+## :octicons-video-16: Multimedia tools
 
 - Camtasia
 - Adobe InDesign

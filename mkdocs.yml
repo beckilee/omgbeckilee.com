@@ -1,9 +1,28 @@
 site_name: Becki Lee's Portfolio
 site_url: https://omgbeckilee.com
 nav:
-    - Writing samples: index.md
-    - About me: about.md
-    - Skills and tools: tools.md
+    - Home: index.md
+    - Documentation samples:
+      - File streaming: doc-file-streaming.md
+      - Registering an application with Azure Active Directory: doc-akv-app-registration.md
+      - Repeat while loop: doc-repeat-while-loop.md
+      - Debugging a rule with Regula: doc-example-debugging-rule.md
+      - Regula pre-commit hook: doc-regula-precommit-hook.md
+      - Data retention API: doc-embedded-api-data-retention.md
+      - Scan a Snyk Cloud Environment: doc-scan-snyk-cloud-environment.md
+    - Blog samples:
+      - Rego 101 series: blog-rego-101.md
+      - Check Terraform using Regula and OPA: blog-check-terraform-with-regula.md
+      - Securing a Kubernetes pod with Regula and OPA: blog-regula-kubernetes.md
+      - Azure Virtual Network series: blog-azure-vnet-endpoints.md
+      - AWS VPC endpoints: blog-aws-vpc-endpoints.md
+    - Code samples:
+      - Python: python.md
+      - Rego: rego.md
+    - About:
+      - Experience: about.md
+      - Technical skills: tools.md
+    - Tags: tags.md
 theme:
   name: material
   palette:
@@ -18,7 +37,6 @@ theme:
   favicon: images/favicon.svg
   features:
     - navigation.footer
-    - navigation.expand
 extra:
   social:
     - icon: fontawesome/solid/paper-plane
@@ -30,7 +48,6 @@ extra:
   analytics:
     provider: google
     property: G-5WSGN2D3GL
-copyright: Copyright &copy; 2024 Becki Lee
 markdown_extensions:
   - toc:
       permalink: ⚓︎
@@ -38,5 +55,13 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - md_in_html
 extra_css:
   - stylesheets/extra.css
+plugins:
+  - search
+  - tags:
+      tags_file: tags.md

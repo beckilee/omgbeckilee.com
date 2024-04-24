@@ -22,3 +22,8 @@
 .md-typeset table td:last-child {
     border-right: none;
 }
+
+.md-grid .md-typeset .grid.cards li:hover {
+    /* border-color: #ffffffb3; */
+    border-color: var(--md-typeset-table-color);
+}
