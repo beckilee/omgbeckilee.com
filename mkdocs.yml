@@ -34,6 +34,8 @@ theme:
     text: Lato
   icon:
     logo: material/book-heart
+    admonition:
+      abstract: octicons/link-16
   favicon: images/favicon.svg
   features:
     - navigation.footer

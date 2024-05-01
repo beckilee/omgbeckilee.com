@@ -27,3 +27,13 @@
     /* border-color: #ffffffb3; */
     border-color: var(--md-typeset-table-color);
 }
+
+.md-typeset ul.star-list li {
+    padding-left: .4em;
+}
+
+.md-typeset ul li.star-bullet {
+    list-style-type: "\2605";
+    margin-left: 1.1em;
+    padding-left: .55em;
+}
