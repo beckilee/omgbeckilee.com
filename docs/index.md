@@ -1,3 +1,7 @@
+---
+description: Becki Lee is a technical writer specializing in software documentation, blog posts, and occasionally code.
+---
+
 # BECKI LEE'S PORTFOLIO
 
 ## Highlights
