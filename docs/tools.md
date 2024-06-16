@@ -5,6 +5,7 @@
 ### Static site generators
 
 - MkDocs
+- VuePress
 - Sphinx
 - Jekyll
 
@@ -24,6 +25,8 @@
 - reStructuredText
 - YAML
 - JSON
+- HTML
+- CSS
 
 ## :material-cloud: Cloud computing technologies
 
