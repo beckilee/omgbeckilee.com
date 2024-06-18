@@ -1,0 +1,130 @@
+{
+  "openapi": "3.0.0",
+  "servers": [
+    {
+      "url": "https://gimmeacat.com"
+    }
+  ],
+  "info": {
+    "host": "https://gimmeacat.com",
+    "contact": {
+      "email": "halp@omgbeckilee.com",
+      "name": "Becki Lee",
+      "url": "https://gimmeacat.com"
+    },
+    "description": "An API for returning cat facts, unfacts, and pictures. No authentication required.<p>This API was built with the following tools:<ul><li>[Python](https://www.python.org/)</li><li>[Flask](https://flask.palletsprojects.com/en/3.0.x/)</li><li>[AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/)</li><li>[Redoc](https://github.com/Redocly/redoc)</li><li>❤️</li></ul></p>",
+    "title": "GIMME A CAT",
+    "version": "1.0.0",
+    "x-logo": {
+      "url": "gimmeacat-transparent.png",
+      "altText": "GIMME A CAT logo"
+    }
+  },
+  "paths": {
+    "/fact": {
+      "get": {
+        "description": "Get a random cat fact. Try it out: https://gimmeacat.com/fact",
+        "responses": {
+          "200": {
+            "description": "A random cat fact.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Fact"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "summary": "Get a (real) cat fact!"
+      }
+    },
+    "/unfact": {
+      "get": {
+        "description": "Get a random, factual-sounding but totally absurd statement about cats. Try it out: https://gimmeacat.com/unfact",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Unfact"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "summary": "Get a fake cat fact!"
+      }
+    },
+    "/pic": {
+      "get": {
+        "description": "Get a random cat photo. Try it out: https://gimmeacat.com/pic",
+        "responses": {
+          "200": {
+            "description": "A random photo of a cat.",
+            "content": {
+              "image/png": {
+                "schema": {
+                  "$ref": "#/components/schemas/Pic"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "summary": "Get a cat pic!"
+      }
+    }
+  },
+  "security": [],
+  "components": {
+    "schemas": {
+      "Fact": {
+        "description": "A fact object.",
+        "properties": {
+          "message": {
+            "description": "A truthful statement about cats. Currently, there is only 1 fact.",
+            "example": "Rosie is the best cat. This is the only cat fact you'll ever need.",
+            "type": "string"
+          },
+          "type": {
+            "description": "Type of statement: Always `fact`.",
+            "example": "fact",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "Pic": {
+        "description": "A cat photo.",
+        "type": "string",
+        "format": "binary"
+      },
+      "Unfact": {
+        "description": "An unfact object.",
+        "properties": {
+          "message": {
+            "description": "A factual-sounding but totally absurd statement about cats.",
+            "example": "Cats have been observed exhibiting quantum entanglement with their favorite toys, allowing them to teleport objects across the room at will.",
+            "type": "string"
+          },
+          "type": {
+            "description": "Type of statement: Always `unfact`.",
+            "example": "unfact",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    }
+  }
+}

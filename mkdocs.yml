@@ -5,6 +5,7 @@ nav:
     - Documentation samples:
       - File streaming: doc-file-streaming.md
       - Registering an application with Azure Active Directory: doc-akv-app-registration.md
+      - Example OpenAPI Documentation: doc-openapi-example.md
       - Repeat while loop: doc-repeat-while-loop.md
       - Debugging a rule with Regula: doc-example-debugging-rule.md
       - Regula pre-commit hook: doc-regula-precommit-hook.md
